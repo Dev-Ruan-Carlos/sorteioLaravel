@@ -8,7 +8,6 @@ use Illuminate\Http\Request;
 class ResultadoSorteioController extends Controller
 {
     public function resultado(Request $request){
-        $sorteio = new Sorteio();
         $arrayResultado = [];
         $primeiroNum = $request->get('primeiroNum');
         $segundoNum = $request->get('segundoNum');
@@ -24,7 +23,7 @@ class ResultadoSorteioController extends Controller
             }
         }
         sort($arrayResultado);
-        return view('resultadosorteio', compact('arrayResultado'));
+        return view('resultadosorteio', compact('arrayResultado', 'primeiroNum', 'segundoNum', 'quantidadeSorteado'));
     }
 
     public function inicio(){

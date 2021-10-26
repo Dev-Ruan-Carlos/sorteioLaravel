@@ -11,4 +11,8 @@ class Sorteio extends Model
     protected $primaryKey = 'controle';
     protected $connection = 'criador';
     public $timestamps = false;
+
+    public function dadosSorteio() {
+        return $this->hasOne('App\Models\DadoSorteio', 'codsorteio', 'controle');
+    }  
 }
