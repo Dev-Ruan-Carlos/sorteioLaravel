@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\GravarSorteioController;
+use App\Http\Controllers\RedirectInicioController;
+use App\Http\Controllers\ResultadoSorteioController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +18,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    
     return view('welcome');
+});   
+
+Route::prefix('Sorteio')->group( function(){
+    Route::post('resultado', [ResultadoSorteioController::class, 'resultado'])->name('Sorteio.resultado');
+    Route::post('inicio', [ResultadoSorteioController::class, 'inicio'])->name('Sorteio.inicio');
+});
+
+Route::prefix('salvar')->group( function(){
+    Route::post('gravar/{id}', [GravarSorteioController::class, 'gravar'])->name('salvar.gravar');
 });
