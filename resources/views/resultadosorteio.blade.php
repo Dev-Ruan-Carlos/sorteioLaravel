@@ -40,6 +40,7 @@
                         <button type="submit" class="bottonFinalResultado black ml-1 flex-jc">Salvar sorteio</button>
                         <a href="{{route('historico')}}" class="bottonFinalResultado ml-1">Verificar histórico</a>
                     </div>
+                    <span class="white pt-3">* Caso não tenha informado os dados corretamente pode sofrer alguma alteração no sorteio.</span>
                 </div>
             </div>
         </div>
