@@ -11,15 +11,12 @@ class ResultadoSorteioController extends Controller
         $arrayResultado = [];
         $primeiroNum = $request->get('primeiroNum');
         $segundoNum = $request->get('segundoNum');
-        if($primeiroNum > $segundoNum){
+        if($primeiroNum >= $segundoNum){
             $primeiroNum = "1";
         }
         $quantidadeSorteado = $request->get('qntSorteado');
         if($quantidadeSorteado > 5){
             $quantidadeSorteado = 5;
-        }
-        if ($quantidadeSorteado > $primeiroNum) {
-            $quantidadeSorteado = "1";
         }
         for ($i=0; $i < $quantidadeSorteado; $i++) { 
             $encontrou = false;
