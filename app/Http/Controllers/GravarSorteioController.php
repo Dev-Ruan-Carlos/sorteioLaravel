@@ -18,6 +18,6 @@ class GravarSorteioController extends Controller
         $sorteioDado->numeroinicial = $request->get('primeiroNum');
         $sorteioDado->numerofinal = $request->get('segundoNum');
         $sorteio->dadosSorteio()->save($sorteioDado);
-        return redirect()->route('inicio2', compact('sorteio', 'request'));
+        return redirect()->route('historico');
     }
 }

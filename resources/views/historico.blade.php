@@ -10,7 +10,7 @@
                 <br>
             @endforeach
         </div>
-        <div class="flex-jc pt-3">
+        <div class="flex-jc pt-3 pb-3">
             <a href="{{route('inicio2')}}" class="bottonFinalResultado flex-jc">Voltar a tela inicial</a>
         </div>
     </div>
