@@ -8,7 +8,7 @@
             <div class="flex-jc pt-5 resultados flex-c">
                 <h1 class="white">Os números sorteados foram: </h1>
                 <div class="flex-jc pt-2 pl-3">
-                    @foreach ($arrayResultado as $resultado)
+                    @foreach ( $arrayResultado as $quantidadeSorteado => $resultado )
                         <div class="pr-3">
                             <span name="resultadoSorteio">{{$resultado}}</span>
                             <input type="text" name="resultadoSorteio[]" hidden value="{{$resultado}}">
@@ -25,7 +25,7 @@
                         <p class="pt-1" id="date"></p>
                         <div class="flex-jb">
                             <p class="pt-1">Quantidade sorteada: </p>
-                            <p class="pt-1">{{$quantidadeSorteado . " número(s)"}}</p>
+                            <p class="pt-1">{{$quantidadeSorteado+1 . " número(s)"}}</p>
                             <p class="pt-1">Sorteio entre: </p>
                             <p class="pt-1">{{$primeiroNum . " e " . $segundoNum}}</p>
                         </div>
