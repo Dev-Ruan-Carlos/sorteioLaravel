@@ -53,8 +53,11 @@
     m = n.getMonth() + 1;
     d = n.getDate();
     h = n.getHours();
-    me = n.getMinutes();
+    min = n.getMinutes();
     s = n.getSeconds();
-        document.getElementById("date").innerHTML = y + "/" + m + "/" + d + " " + h + ":" + me + ":" + s;
+    if (s < 10) s = '0' + s;
+    if (min < 10) min = '0' + min;
+    if (h < 10) h = '0' + h;
+        document.getElementById("date").innerHTML = y + "/" + m + "/" + d + " " + h + ":" + min + ":" + s;
 </script>
 @endsection
