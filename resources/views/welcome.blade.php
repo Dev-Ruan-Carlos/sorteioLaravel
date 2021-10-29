@@ -13,7 +13,7 @@
             </div>
             <div class="flex-jc pt-7 pr-1">
                 <span class="pr-2 spanSorteio">Sortear</span>
-                <input type="number" class="inputSorteio black" name="qntSorteado" id="qntSorteado" min="1" max="5" required autofocus>
+                <input type="number" class="inputSorteio black" name="qntSorteado" id="qntSorteado" min="1" max="10" required autofocus>
                 <span class="pr-2 pl-2 spanSorteio">número(s)</span>
                 <span class="pr-3 spanSorteio">entre</span>
                 <input type="number" class="inputSorteio black" min="1" max="100" name="primeiroNum" required>

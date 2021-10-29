@@ -15,8 +15,8 @@ class ResultadoSorteioController extends Controller
             $primeiroNum = "1";
         }
         $quantidadeSorteado = $request->get('qntSorteado');
-        if($quantidadeSorteado >= 5){
-            $quantidadeSorteado = "5";
+        if($quantidadeSorteado >= 10){
+            $quantidadeSorteado = "10";
         }
         $limit = 0;
         if($quantidadeSorteado > $primeiroNum && $quantidadeSorteado > $segundoNum){
