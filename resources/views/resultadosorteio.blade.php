@@ -5,7 +5,7 @@
     @method('POST')
     <div class="fundo flex-jc flex-ac">
         <div class="escurecer white" id="fundo">
-            <div class="flex-jc pt-3 resultados flex-c">
+            <div class="flex-jc pt-2 resultados flex-c">
                 <h1 class="white">Os números sorteados foram: </h1>
                 <div class="flex-jc pt-2 pl-3" style="display: flex; flex-flow: row wrap;">
                     @foreach ( $arrayResultado as $quantidadeSorteado => $resultado )
