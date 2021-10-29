@@ -14,7 +14,7 @@ class GravarSorteioController extends Controller
         $sorteio->session = session()->getId();
         $sorteio->save();
         $sorteioDado = new DadoSorteio();
-        $sorteioDado->qtdenumeros = $request->get('qntSorteado');
+        $sorteioDado->qtdenumeros = $request->get('qntSorteado') +1;
         $sorteioDado->numeroinicial = $request->get('primeiroNum');
         $sorteioDado->numerofinal = $request->get('segundoNum');
         $sorteio->dadosSorteio()->save($sorteioDado);
