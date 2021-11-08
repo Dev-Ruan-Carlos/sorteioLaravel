@@ -271,3 +271,30 @@
     padding: 1rem;
     align-items: center;
   }
+
+  .error{
+    color: white;
+    background-color: red;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  .ordemCrescente{
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .mensagemError {
+    display: flex;
+    position: relative;
+    left: 208px;
+    bottom: 33px;
+    background: red;
+    font-size: 15px;
+    cursor: pointer;
+  }
